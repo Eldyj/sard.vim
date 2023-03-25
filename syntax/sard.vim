@@ -5,7 +5,7 @@ syn region SardCom start=/#\|;/ end=/\n/
 syn keyword SardOp += -= *= /= + - * / = := <=> < > != ~= == <= >= <> -> :
 
 " general syntax
-syn keyword SardSyn end label goto break continue
+syn keyword SardSyn end label goto break continue buf
 syn keyword SardCond if unless else elif elun
 syn keyword SardLoop loop dowhile while for
 syn match SardFnRetVar /:\k\+\n/
@@ -16,7 +16,7 @@ syn keyword SardPreproc once
 syn keyword SardInclude include use
 
 " base functions
-syn keyword SardDefFns syscall pr prn print println exit
+syn keyword SardDefFns syscall pr prn print println exit read input
 
 " default types
 syn match SardNum /\<\d\+\>/
